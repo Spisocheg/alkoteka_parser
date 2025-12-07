@@ -70,7 +70,7 @@ class ProductsByCategorySpider(scrapy.Spider):
 
         # Чтение файла links.txt и перенос их в urls_from_file
         # + проверка существования файла, чтение, проверка валидности ссылок, добавление в список urls_from_file
-        urls_file = self.settings.get('PROJECT_DIR_PATH') / self.settings.get('URLS_FILENAME')
+        urls_file = self.settings.get('URLS_FILENAME')
         if urls_file.exists():
             url_pattern = re.compile(r'^https://alkoteka\.com/catalog/[a-zA-Z0-9\-_]+$')
             with open(urls_file, 'r', encoding='utf-8') as f:

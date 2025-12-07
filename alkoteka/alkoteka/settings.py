@@ -109,7 +109,7 @@ FEED_EXPORT_ENCODING = "utf-8"
 
 
 # Константа пути к файлу со ссылками для сбора данных
-URLS_FILENAME = 'links.txt'
+URLS_FILENAME = PROJECT_DIR_PATH / 'links.txt'
 
 # Настройки для сбора данных
 PARSING_PARAMS = {
